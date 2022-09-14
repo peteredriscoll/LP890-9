@@ -1,5 +1,5 @@
 # Example primary input file for VPLanet
-sSystemName	tidalearth		# System Name
+sSystemName	b		# System Name
 iVerbose		5			        # Verbosity level
 bOverwrite	1			        # Allow file overwrites?
 
