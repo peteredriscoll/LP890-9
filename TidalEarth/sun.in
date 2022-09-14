@@ -2,7 +2,7 @@
 sName        sun
 dMass        -0.118
 dRadius      -0.1532
-dLuminosity  -1.438  #3.846e26
+dLuminosity  -1.438e-3  #3.846e26
 sStellarModel none
 saModules    stellar eqtide
 saTidePerts  tidalearth

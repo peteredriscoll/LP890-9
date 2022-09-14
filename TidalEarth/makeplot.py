@@ -5,8 +5,9 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 import vplot
+import subprocess
 
-import vplanet
+#import vplanet
 
 # Path hacks
 path = pathlib.Path(__file__).parents[0].absolute()
@@ -24,7 +25,10 @@ filepref = "TidalEarth"
 #out0 = vplanet.run(path / "au0.01" / "vpl.in", units=False)
 #out1 = vplanet.run(path / "au0.02" / "vpl.in", units=False)
 #out2 = vplanet.run(path / "au0.05" / "vpl.in", units=False)
-out0 = vplanet.run(path / "vpl.in", units=False)
+#out0 = vplanet.run(path / "vpl.in", units=False)
+
+subprocess.call(['vplanet','vpl.in'])
+out0 = vplot.GetOutput('./')
 
 def fig2x3(out, nfig, color="k", legendon=False):
     fig = plt.figure(nfig, figsize=(10, 15))
